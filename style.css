@@ -1,0 +1,115 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: url(background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  letter-spacing: 1.2px;
+}
+
+.wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 50px;
+}
+.header__avatar {
+  display: block;
+  width: 290px;
+  height: 290px;
+  overflow: hidden;
+  border-radius: 100%;
+  margin-left: 30px;
+  position: relative;
+}
+.header__avatar img{
+  width: 100%;
+  position: absolute;
+  left: 0%;
+  top: -36%;
+}
+.header-about {
+  flex-basis: 50%;
+}
+.header-about__name {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.header-about__info{
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.cv {
+  display: grid;
+  grid-template-areas: "a d"
+                       "b d"
+                       "c e";
+  margin: 15px auto;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 900px;
+}
+.cv-section__skills{
+  grid-area: b;
+}
+.cv-section__contacts{
+  grid-area: a;
+  padding-top: 80px;
+}
+.cv-section__languages{
+  grid-area: c;
+}
+.cv-section__experience{
+  grid-area: d;
+}
+.cv-section__education{
+  grid-area: e;
+}
+.cv-section__title{
+  font-weight: 500;
+  padding-bottom: 2px;
+  margin-bottom: 5px;
+  border-bottom: 2px solid #7eaedf;
+  display: inline-block;
+}
+.cv-section__subtitle{
+  font-weight: 500;
+}
+.cv-section__link {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+.cv-section__link_block{
+  display: block;
+  margin: 10px;
+}
+.cv-section__list li{
+  margin-bottom: 5px;
+}
+.cv-section__list li span {
+  font-weight: 600;
+}
