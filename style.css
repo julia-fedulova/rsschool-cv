@@ -31,6 +31,7 @@ body {
   align-items: center;
   padding-top: 50px;
 }
+
 .header__avatar {
   display: block;
   width: 290px;
@@ -40,21 +41,25 @@ body {
   margin-left: 30px;
   position: relative;
 }
-.header__avatar img{
+
+.header__avatar img {
   width: 100%;
   position: absolute;
   left: 0%;
   top: -36%;
 }
+
 .header-about {
   flex-basis: 50%;
 }
+
 .header-about__name {
   font-size: 40px;
   text-transform: uppercase;
   font-weight: 500;
 }
-.header-about__info{
+
+.header-about__info {
   font-size: 16px;
   font-weight: 400;
   margin-top: 10px;
@@ -63,32 +68,37 @@ body {
 .cv {
   display: grid;
   grid-template-areas: "a d"
-                       "b d"
-                       "c e";
+    "b d"
+    "c e";
   margin: 15px auto;
   grid-gap: 30px;
   grid-template-columns: 1fr 1fr;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px 35px;
   max-width: 900px;
 }
-.cv-section__skills{
+
+.cv-section__skills {
   grid-area: b;
 }
-.cv-section__contacts{
+
+.cv-section__contacts {
   grid-area: a;
   padding-top: 80px;
 }
-.cv-section__languages{
+
+.cv-section__languages {
   grid-area: c;
 }
-.cv-section__experience{
+
+.cv-section__experience {
   grid-area: d;
 }
-.cv-section__education{
+
+.cv-section__education {
   grid-area: e;
 }
-.cv-section__title{
+
+.cv-section__title {
   font-weight: 500;
   padding: 2px;
   margin-bottom: 5px;
@@ -96,21 +106,41 @@ body {
   display: inline-block;
   background-color: #fff;
 }
-.cv-section__subtitle{
+
+.cv-section__subtitle {
   font-weight: 500;
 }
+
 .cv-section__link {
   text-decoration: none;
   color: #000;
   font-weight: 600;
 }
-.cv-section__link_block{
+
+.cv-section__link_block {
   display: block;
   margin: 10px;
 }
-.cv-section__list li{
+
+.cv-section__list li {
   margin-bottom: 5px;
 }
+
 .cv-section__list li span {
   font-weight: 600;
+}
+
+.footer {
+  padding: 30px 15px;
+  border-top: 2px solid #7eaedf;
+}
+
+.footer-block__links {
+  list-style-type: none;
+}
+
+.footer-block {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
